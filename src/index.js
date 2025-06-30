@@ -6,7 +6,7 @@ module.exports = (ctx) => {
   const register = () => {
     ctx.helper.uploader.register('web-uploader', {
       handle,
-      name: '自定义 api 接口上传',
+      name: '自定义api接口上传',
       config: config
     })
   }
@@ -99,40 +99,32 @@ module.exports = (ctx) => {
         type: 'input',
         default: userConfig.url,
         required: true,
-        message: 'API地址',
-        alias: 'API地址'
+        message: '例如: https://api.example.com/upload',
+        alias: '图床上传API地址'
       },
       {
         name: 'paramName',
         type: 'input',
         default: userConfig.paramName,
         required: true,
-        message: 'POST参数名',
-        alias: 'POST参数名'
+        message: '例如: imgName',
+        alias: '接口图片参数名'
       },
       {
         name: 'jsonPath',
         type: 'input',
         default: userConfig.jsonPath,
         required: false,
-        message: '图片URL JSON路径(eg: data.url)',
-        alias: 'JSON路径'
+        message: '例如: data.url',
+        alias: '返回值取值路径'
       },
       {
         name: 'customHeader',
         type: 'input',
         default: userConfig.customHeader,
         required: false,
-        message: '自定义请求头 标准JSON(eg: {"key":"value"})',
-        alias: '自定义请求头'
-      },
-      {
-        name: 'customBody',
-        type: 'input',
-        default: userConfig.customBody,
-        required: false,
-        message: '自定义Body 标准JSON(eg: {"key":"value"})',
-        alias: '自定义Body'
+        message: '例如: {"token":"xxxxxxxxxx"}',
+        alias: '自定义 headers'
       },
       {
         name: 'prefix',
@@ -141,7 +133,15 @@ module.exports = (ctx) => {
         required: false,
         message: 'jsonPath 字段返回值前缀拼接',
         alias: 'jsonPath 前缀拼接'
-      }
+      },
+      {
+        name: 'customBody',
+        type: 'input',
+        default: userConfig.customBody,
+        required: false,
+        message: '例如: {"key":"value"}',
+        alias: '自定义 Body'
+      },
     ]
   }
   return {
