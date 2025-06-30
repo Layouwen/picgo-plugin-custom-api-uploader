@@ -20,6 +20,7 @@ module.exports = (ctx) => {
     const jsonPath = userConfig.jsonPath
     const customHeader = userConfig.customHeader
     const customBody = userConfig.customBody
+    const prefix = userConfig.prefix
     try {
       let imgList = ctx.output
       for (let i in imgList) {
@@ -41,6 +42,9 @@ module.exports = (ctx) => {
             imgUrl = imgUrl[field]
           }
           if (imgUrl) {
+            if (prefix) {
+              imgUrl = prefix + imgUrl
+            }
             imgList[i]['imgUrl'] = imgUrl
           } else {
             ctx.emit('notification', {
