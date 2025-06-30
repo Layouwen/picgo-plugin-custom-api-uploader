@@ -6,7 +6,7 @@ module.exports = (ctx) => {
   const register = () => {
     ctx.helper.uploader.register('web-uploader', {
       handle,
-      name: '自定义Web图床',
+      name: '自定义 api 接口上传',
       config: config
     })
   }
@@ -140,7 +140,7 @@ module.exports = (ctx) => {
         default: userConfig.prefix,
         required: false,
         message: 'jsonPath 字段返回值前缀拼接',
-        alias: '自定义Body'
+        alias: 'jsonPath 前缀拼接'
       }
     ]
   }
