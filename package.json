@@ -1,7 +1,7 @@
 {
-  "name": "picgo-plugin-web-uploader",
-  "version": "1.1.0",
-  "description": "自定义Web图床",
+  "name": "picgo-plugin-custom-api-uploader",
+  "version": "1.0.0",
+  "description": "自定义 api 接口上传",
   "main": "src/index.js",
   "publishConfig": {
     "access": "public"
@@ -18,7 +18,7 @@
     "picgo-gui-plugin",
     "picgo-plugin"
   ],
-  "author": "ZQian",
+  "author": "Avan",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.0.1",
