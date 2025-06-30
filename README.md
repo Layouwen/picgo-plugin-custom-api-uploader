@@ -45,7 +45,7 @@ macOS: `~/Library/Application\ Support/picgo/`
 | --- | --- |
 | 图床配置名 | Default |
 | API地址 | https://i.111666.best/image |
-| 上传图片参数名 | image |
+| 接口图片参数名 | image |
 | 返回值取值路径 | src |
 | 自定义 headers | {"Auth-Token":"改成你自己的唯一值"} |
 | jsonPath 返回值前缀拼接 | https://i.111666.best/ |
