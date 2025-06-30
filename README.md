@@ -26,12 +26,12 @@ macOS: `~/Library/Application\ Support/picgo/`
 
 | 配置项 | 说明 | 必填 |
 | --- | --- | --- |
-| url | 图床上传API地址 | 是 |
-| paramName | 上传图片参数名 | 是 |
-| jsonPath | 返回值取值路径 (eg: `data.url`) | 否 |
-| customHeader | 自定义 headers 严格 JSON 格式 (eg: `{"key":"value"}`) | 否 |
-| customBody | 自定义 Body 严格 JSON 格式 (eg: `{"key":"value"}`) | 否 |
-| prefix | `jsonPath` 返回值前缀拼接 | 否 |
+| 图床上传API地址 | 例如: https://api.example.com/upload | 是 |
+| 接口图片参数名 | 例如: imgName | 是 |
+| 返回值取值路径 | 例如: data.url | 否 |
+| 自定义 `headers` | 例如: {"token":"xxxxxxxxxx"} | 否 |
+| `jsonPath` 前缀拼接 | jsonPath 字段返回值前缀拼接 | 否 |
+| 自定义 `Body` | 例如: {"key":"value"} | 否 |
 
 ## 图床示例
 
