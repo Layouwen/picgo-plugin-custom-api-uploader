@@ -129,6 +129,14 @@ module.exports = (ctx) => {
         required: false,
         message: '自定义Body 标准JSON(eg: {"key":"value"})',
         alias: '自定义Body'
+      },
+      {
+        name: 'prefix',
+        type: 'input',
+        default: userConfig.prefix,
+        required: false,
+        message: 'jsonPath 字段返回值前缀拼接',
+        alias: '自定义Body'
       }
     ]
   }
